@@ -1,120 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single-page developer portfolio</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__logo">adamkeyes</div>
+      <ul class="navbar__social">
+        <li>
+          <a href="#" class="navbar__link"
+            ><img src="./assets/images/icon-github.svg" alt="GitHub"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="navbar__link"
+            ><img
+              src="./assets/images/icon-frontend-mentor.svg"
+              alt="Frontend Mentor"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="navbar__link"
+            ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="navbar__link"
+            ><img src="./assets/images/icon-twitter.svg" alt="Twitter"
+          /></a>
+        </li>
+      </ul>
+    </nav>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single-page developer portfolio</title>
-</head>
-<body>
+    <main>
+      <section class="hero">
+        <h1 class="hero__title">Nice to meet you! I'm Adam Keyes.</h1>
+        <p class="hero__description">
+          Based in the UK, I'm a front-end developer passionate about building
+          accessible web apps that users love.
+        </p>
+        <button class="hero__button">Contact me</button>
+      </section>
 
-<nav class="navbar">
-  <div class="navbar__logo">adamkeyes</div>
-  <ul class="navbar__social">
-    <li><a href="#" class="navbar__link"><img src="./assets/images/icon-github.svg" alt="GitHub"></a></li>
-    <li><a href="#" class="navbar__link"><img src="./assets/images/icon-frontend-mentor.svg" alt="Frontend Mentor"></a></li>
-    <li><a href="#" class="navbar__link"><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"></a></li>
-    <li><a href="#" class="navbar__link"><img src="./assets/images/icon-twitter.svg" alt="Twitter"></a></li>
-  </ul>
-</nav>
+      <section class="skills">
+        <div class="skills__item">
+          <h2 class="skills__title">HTML</h2>
+          <p class="skills__experience">4 Years Experience</p>
+        </div>
+        <div class="skills__item">
+          <h2 class="skills__title">CSS</h2>
+          <p class="skills__experience">4 Years Experience</p>
+        </div>
+        <div class="skills__item">
+          <h2 class="skills__title">JavaScript</h2>
+          <p class="skills__experience">4 Years Experience</p>
+        </div>
+        <div class="skills__item">
+          <h2 class="skills__title">Accessibility</h2>
+          <p class="skills__experience">4 Years Experience</p>
+        </div>
+        <div class="skills__item">
+          <h2 class="skills__title">React</h2>
+          <p class="skills__experience">3 Years Experience</p>
+        </div>
+        <div class="skills__item">
+          <h2 class="skills__title">Sass</h2>
+          <p class="skills__experience">3 Years Experience</p>
+        </div>
+      </section>
 
-<section class="hero">
-  <h1 class="hero__title">Nice to meet you! I'm Adam Keyes.</h1>
-  <p class="hero__description">Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.</p>
-  <button class="hero__button">Contact me</button>
-</section>
+      <section class="projects">
+        <div class="projects__header">
+          <h1 class="projects__title">Projects</h1>
+          <button class="projects__contact-btn">Contact me</button>
+        </div>
+        <div class="projects__card">
+          <img
+            class="projects__card-image"
+            src="./assets/images/thumbnail-project-1-large.webp"
+            alt="Design portfolio thumbnail"
+          />
+          <h3 class="projects__card-title">Design portfolio</h3>
+          <p class="projects__card-tech">HTML CSS</p>
+          <a class="projects__card-link" href="#">View project</a>
+          <a class="projects__card-link" href="#">View code</a>
+        </div>
+        <div class="projects__card">
+          <img
+            class="projects__card-image"
+            src="./assets/images/thumbnail-project-2-large.webp"
+            alt="E-learning landing page thumbnail"
+          />
+          <h3 class="projects__card-title">E-learning landing page</h3>
+          <p class="projects__card-tech">HTML CSS</p>
+          <a class="projects__card-link" href="#">View project</a>
+          <a class="projects__card-link" href="#">View code</a>
+        </div>
+        <div class="projects__card">
+          <img
+            class="projects__card-image"
+            src="./assets/images/thumbnail-project-3-large.webp"
+            alt="Todo web app thumbnail"
+          />
+          <h3 class="projects__card-title">Todo web app</h3>
+          <p class="projects__card-tech">HTML CSS JavaScript</p>
+          <a class="projects__card-link" href="#">View project</a>
+          <a class="projects__card-link" href="#">View code</a>
+        </div>
+        <div class="projects__card">
+          <img
+            class="projects__card-image"
+            src="./assets/images/thumbnail-project-4-large.webp"
+            alt="Entertainment web app thumbnail"
+          />
+          <h3 class="projects__card-title">Entertainment web app</h3>
+          <p class="projects__card-tech">HTML CSS JavaScript</p>
+          <a class="projects__card-link" href="#">View project</a>
+          <a class="projects__card-link" href="#">View code</a>
+        </div>
+        <div class="projects__card">
+          <img
+            class="projects__card-image"
+            src="./assets/images/thumbnail-project-5-large.webp"
+            alt="Memory Game thumbnail"
+          />
+          <h3 class="projects__card-title">Memory Game</h3>
+          <p class="projects__card-tech">HTML CSS JavaScript</p>
+          <a class="projects__card-link" href="#">View project</a>
+          <a class="projects__card-link" href="#">View code</a>
+        </div>
+        <div class="projects__card">
+          <img
+            class="projects__card-image"
+            src="./assets/images/thumbnail-project-6-large.webp"
+            alt="Art gallery showcase thumbnail"
+          />
+          <h3 class="projects__card-title">Art gallery showcase</h3>
+          <p class="projects__card-tech">HTML CSS JavaScript</p>
+          <a class="projects__card-link" href="#">View project</a>
+          <a class="projects__card-link" href="#">View code</a>
+        </div>
+      </section>
+    </main>
 
-<section class="skills">
-  <div class="skills__item">
-    <h2 class="skills__title">HTML</h2>
-    <p class="skills__experience">4 Years Experience</p>
-  </div>
-  <div class="skills__item">
-    <h2 class="skills__title">CSS</h2>
-    <p class="skills__experience">4 Years Experience</p>
-  </div>
-  <div class="skills__item">
-    <h2 class="skills__title">JavaScript</h2>
-    <p class="skills__experience">4 Years Experience</p>
-  </div>
-  <div class="skills__item">
-    <h2 class="skills__title">Accessibility</h2>
-    <p class="skills__experience">4 Years Experience</p>
-  </div>
-  <div class="skills__item">
-    <h2 class="skills__title">React</h2>
-    <p class="skills__experience">3 Years Experience</p>
-  </div>
-  <div class="skills__item">
-    <h2 class="skills__title">Sass</h2>
-    <p class="skills__experience">3 Years Experience</p>
-  </div>
-</section>
-
-<section class="projects">
-  <div class="projects__header">
-    <h1 class="projects__title">Projects</h1>
-    <button class="projects__contact-btn">Contact me</button>
-  </div>
-  <div class="projects__card">
-    <img class="projects__card-image" src="./assets/images/thumbnail-project-1-large.webp" alt="Design portfolio thumbnail">
-    <h2 class="projects__card-title">Design portfolio</h2>
-    <p class="projects__card-tech">HTML CSS</p>
-    <a class="projects__card-link" href="#">View project</a>
-    <a class="projects__card-link" href="#">View code</a>
-  </div>
-  <div class="projects__card">
-    <img class="projects__card-image" src="./assets/images/thumbnail-project-2-large.webp" alt="E-learning landing page thumbnail">
-    <h2 class="projects__card-title">E-learning landing page</h2>
-    <p class="projects__card-tech">HTML CSS</p>
-    <a class="projects__card-link" href="#">View project</a>
-    <a class="projects__card-link" href="#">View code</a>
-  </div>
-  <div class="projects__card">
-    <img class="projects__card-image" src="./assets/images/thumbnail-project-3-large.webp" alt="Todo web app thumbnail">
-    <h2 class="projects__card-title">Todo web app</h2>
-    <p class="projects__card-tech">HTML CSS JavaScript</p>
-    <a class="projects__card-link" href="#">View project</a>
-    <a class="projects__card-link" href="#">View code</a>
-  </div>
-  <div class="projects__card">
-    <img class="projects__card-image" src="./assets/images/thumbnail-project-4-large.webp" alt="Entertainment web app thumbnail">
-    <h2 class="projects__card-title">Entertainment web app</h2>
-    <p class="projects__card-tech">HTML CSS JavaScript</p>
-    <a class="projects__card-link" href="#">View project</a>
-    <a class="projects__card-link" href="#">View code</a>
-  </div>
-  <div class="projects__card">
-    <img class="projects__card-image" src="./assets/images/thumbnail-project-5-large.webp" alt="Memory Game thumbnail">
-    <h2 class="projects__card-title">Memory Game</h2>
-    <p class="projects__card-tech">HTML CSS JavaScript</p>
-    <a class="projects__card-link" href="#">View project</a>
-    <a class="projects__card-link" href="#">View code</a>
-  </div>
-  <div class="projects__card">
-    <img class="projects__card-image" src="./assets/images/thumbnail-project-6-large.webp" alt="Art gallery showcase thumbnail">
-    <h2 class="projects__card-title">Art gallery showcase</h2>
-    <p class="projects__card-tech">HTML CSS JavaScript</p>
-    <a class="projects__card-link" href="#">View project</a>
-    <a class="projects__card-link" href="#">View code</a>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer__intro">
-    <h1>Contact</h1>
-    <p>I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
-  </div>
-  <form class="footer__form">
-    <input type="text" name="name" class="footer__input" placeholder="Name">
-    <input type="email" name="email" class="footer__input" placeholder="Email">
-    <textarea name="message" class="footer__textarea" placeholder="Message"></textarea>
-    <button type="submit" class="footer__button">Send message</button>
-  </form>
-  <div class="footer__logo">adamkeyes</div>
-</footer>
-
-</body>
+    <footer class="footer">
+      <div class="footer__intro">
+        <h1>Contact</h1>
+        <p>
+          I would love to hear about your project and how I could help. Please
+          fill in the form, and I'll get back to you as soon as possible.
+        </p>
+      </div>
+      <form class="footer__form">
+        <input
+          type="text"
+          name="name"
+          class="footer__input"
+          placeholder="Name"
+        />
+        <input
+          type="email"
+          name="email"
+          class="footer__input"
+          placeholder="Email"
+        />
+        <textarea
+          name="message"
+          class="footer__textarea"
+          placeholder="Message"
+        ></textarea>
+        <button type="submit" class="footer__button">Send message</button>
+      </form>
+      <div class="footer__logo">adamkeyes</div>
+      <ul class="navbar__social">
+        <li>
+          <a href="#" class="navbar__link"
+            ><img src="./assets/images/icon-github.svg" alt="GitHub"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="navbar__link"
+            ><img
+              src="./assets/images/icon-frontend-mentor.svg"
+              alt="Frontend Mentor"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="navbar__link"
+            ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="navbar__link"
+            ><img src="./assets/images/icon-twitter.svg" alt="Twitter"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
