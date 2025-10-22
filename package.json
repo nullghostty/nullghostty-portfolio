@@ -1,0 +1,20 @@
+{
+  "name": "single-page-developer-portfolio",
+  "version": "1.0.0",
+  "description": "![Design preview for the Single-page developer portfolio coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server . -p -3000 -c-1",
+    "dev": "concurrently \"http-server . -p 3000 --cors -o -c-1\" \"sass --watch sass/style.scss css/style.css\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
