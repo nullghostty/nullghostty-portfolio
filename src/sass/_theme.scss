@@ -1,0 +1,34 @@
+$black: hsl(0 0% 8%);
+$green: hsl(153 71% 59%);
+$dark-grey: hsl(0 0% 14%);
+$grey: hsl(0 0% 85%);
+$white: hsl(0 0% 100%);
+
+body {
+  background: $black;
+  color: $white;
+}
+
+p {
+  color: $grey;
+}
+
+.btn {
+  border-bottom: 0.125rem solid $green;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.input {
+  border-bottom: 0.0625rem solid $white;
+
+  &:focus {
+    border-color: $green;
+  }
+}
+
+.footer {
+  background: $dark-grey;
+}

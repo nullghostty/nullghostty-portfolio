@@ -37,45 +37,49 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero__title">Nice to meet you! I'm Adam Keyes.</h1>
+        <h1 class="heading-xl" id="hero__title">
+          Nice to meet you! I'm Adam Keyes.
+        </h1>
         <p class="hero__description">
           Based in the UK, I'm a front-end developer passionate about building
           accessible web apps that users love.
         </p>
-        <button class="hero__button">Contact me</button>
+        <button class="btn" id="hero__button">Contact me</button>
       </section>
 
       <section class="skills">
         <div class="skills__item">
-          <h2 class="skills__title">HTML</h2>
+          <h2 class="heading-l" id="skills__title-html">HTML</h2>
           <p class="skills__experience">4 Years Experience</p>
         </div>
         <div class="skills__item">
-          <h2 class="skills__title">CSS</h2>
+          <h2 class="heading-l" id="skills__title-css">CSS</h2>
           <p class="skills__experience">4 Years Experience</p>
         </div>
         <div class="skills__item">
-          <h2 class="skills__title">JavaScript</h2>
+          <h2 class="heading-l" id="skills__title-js">JavaScript</h2>
           <p class="skills__experience">4 Years Experience</p>
         </div>
         <div class="skills__item">
-          <h2 class="skills__title">Accessibility</h2>
+          <h2 class="heading-l" id="skills__title-accessibility">
+            Accessibility
+          </h2>
           <p class="skills__experience">4 Years Experience</p>
         </div>
         <div class="skills__item">
-          <h2 class="skills__title">React</h2>
+          <h2 class="heading-l" id="skills__title-react">React</h2>
           <p class="skills__experience">3 Years Experience</p>
         </div>
         <div class="skills__item">
-          <h2 class="skills__title">Sass</h2>
+          <h2 class="heading-l" id="skills__title-sass">Sass</h2>
           <p class="skills__experience">3 Years Experience</p>
         </div>
       </section>
 
       <section class="projects">
         <div class="projects__header">
-          <h1 class="projects__title">Projects</h1>
-          <button class="projects__contact-btn">Contact me</button>
+          <h1 class="heading-xl" id="projects__title">Projects</h1>
+          <button class="btn" id="projects__contact-btn">Contact me</button>
         </div>
         <div class="projects__card">
           <img
@@ -83,7 +87,9 @@
             src="./assets/images/thumbnail-project-1-large.webp"
             alt="Design portfolio thumbnail"
           />
-          <h3 class="projects__card-title">Design portfolio</h3>
+          <h3 class="heading-m" id="projects__card-title-design-portfolio">
+            Design portfolio
+          </h3>
           <p class="projects__card-tech">HTML CSS</p>
           <a class="projects__card-link" href="#">View project</a>
           <a class="projects__card-link" href="#">View code</a>
@@ -94,7 +100,9 @@
             src="./assets/images/thumbnail-project-2-large.webp"
             alt="E-learning landing page thumbnail"
           />
-          <h3 class="projects__card-title">E-learning landing page</h3>
+          <h3 class="heading-m" id="projects__card-title-elearning">
+            E-learning landing page
+          </h3>
           <p class="projects__card-tech">HTML CSS</p>
           <a class="projects__card-link" href="#">View project</a>
           <a class="projects__card-link" href="#">View code</a>
@@ -105,7 +113,7 @@
             src="./assets/images/thumbnail-project-3-large.webp"
             alt="Todo web app thumbnail"
           />
-          <h3 class="projects__card-title">Todo web app</h3>
+          <h3 class="heading-m" id="projects__card-title-todo">Todo web app</h3>
           <p class="projects__card-tech">HTML CSS JavaScript</p>
           <a class="projects__card-link" href="#">View project</a>
           <a class="projects__card-link" href="#">View code</a>
@@ -116,7 +124,9 @@
             src="./assets/images/thumbnail-project-4-large.webp"
             alt="Entertainment web app thumbnail"
           />
-          <h3 class="projects__card-title">Entertainment web app</h3>
+          <h3 class="heading-m" id="projects__card-title-entertainment">
+            Entertainment web app
+          </h3>
           <p class="projects__card-tech">HTML CSS JavaScript</p>
           <a class="projects__card-link" href="#">View project</a>
           <a class="projects__card-link" href="#">View code</a>
@@ -127,7 +137,9 @@
             src="./assets/images/thumbnail-project-5-large.webp"
             alt="Memory Game thumbnail"
           />
-          <h3 class="projects__card-title">Memory Game</h3>
+          <h3 class="heading-m" id="projects__card-title-memory">
+            Memory Game
+          </h3>
           <p class="projects__card-tech">HTML CSS JavaScript</p>
           <a class="projects__card-link" href="#">View project</a>
           <a class="projects__card-link" href="#">View code</a>
@@ -138,7 +150,9 @@
             src="./assets/images/thumbnail-project-6-large.webp"
             alt="Art gallery showcase thumbnail"
           />
-          <h3 class="projects__card-title">Art gallery showcase</h3>
+          <h3 class="heading-m" id="projects__card-title-art-gallery">
+            Art gallery showcase
+          </h3>
           <p class="projects__card-tech">HTML CSS JavaScript</p>
           <a class="projects__card-link" href="#">View project</a>
           <a class="projects__card-link" href="#">View code</a>
@@ -148,7 +162,7 @@
 
     <footer class="footer">
       <div class="footer__intro">
-        <h1>Contact</h1>
+        <h1 class="heading-xl" id="footer__contact-title">Contact</h1>
         <p>
           I would love to hear about your project and how I could help. Please
           fill in the form, and I'll get back to you as soon as possible.
@@ -158,21 +172,26 @@
         <input
           type="text"
           name="name"
-          class="footer__input"
+          class="input"
+          id="footer__name-input"
           placeholder="Name"
         />
         <input
           type="email"
           name="email"
-          class="footer__input"
+          class="input"
+          id="footer__email-input"
           placeholder="Email"
         />
         <textarea
           name="message"
-          class="footer__textarea"
+          class="input"
+          id="footer__message-textarea"
           placeholder="Message"
         ></textarea>
-        <button type="submit" class="footer__button">Send message</button>
+        <button type="submit" class="btn" id="footer__button">
+          Send message
+        </button>
       </form>
       <div class="footer__logo">adamkeyes</div>
       <ul class="navbar__social">

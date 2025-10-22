@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../../assets/fonts/static/SpaceGrotesk-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../../assets/fonts/static/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+.btn,
+.input,
+.projects__card-tech {
+  text-transform: uppercase;
+}
+
+@mixin font($fs: 0rem, $lh: 0rem) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+.heading-xl,
+.heading-l,
+.heading-m {
+  font-weight: 700;
+}
+
+.heading-xl {
+  @include font($fs: 5.5rem, $lh: 5.5rem); 
+  letter-spacing: -0.15625rem;
+}
+
+.heading-l {
+  @include font($fs: 3rem, $lh: 3.5rem); 
+  letter-spacing: -0.09375rem;
+}
+
+.heading-m {
+  @include font($fs: 1.5rem, $lh: 2rem); 
+}

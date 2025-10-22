@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  all: unset;
+}
+
+body {
+  background: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsl(0, 0%, 85%);
+}
+
+.btn {
+  border-bottom: 0.125rem solid hsl(153, 71%, 59%);
+}
+.btn:hover {
+  color: hsl(153, 71%, 59%);
+}
+
+.input {
+  border-bottom: 0.0625rem solid hsl(0, 0%, 100%);
+}
+.input:focus {
+  border-color: hsl(153, 71%, 59%);
+}
+
+.footer {
+  background: hsl(0, 0%, 14%);
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../../assets/fonts/static/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../../assets/fonts/static/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+body {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+.btn,
+.input,
+.projects__card-tech {
+  text-transform: uppercase;
+}
+
+.heading-xl,
+.heading-l,
+.heading-m {
+  font-weight: 700;
+}
+
+.heading-xl {
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  letter-spacing: -0.15625rem;
+}
+
+.heading-l {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.09375rem;
+}
+
+.heading-m {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
