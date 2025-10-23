@@ -7,38 +7,12 @@
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar__logo">adamkeyes</div>
-      <ul class="navbar__social">
-        <li>
-          <a href="#" class="navbar__link"
-            ><img src="./assets/images/icon-github.svg" alt="GitHub"
-          /></a>
-        </li>
-        <li>
-          <a href="#" class="navbar__link"
-            ><img
-              src="./assets/images/icon-frontend-mentor.svg"
-              alt="Frontend Mentor"
-          /></a>
-        </li>
-        <li>
-          <a href="#" class="navbar__link"
-            ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
-          /></a>
-        </li>
-        <li>
-          <a href="#" class="navbar__link"
-            ><img src="./assets/images/icon-twitter.svg" alt="Twitter"
-          /></a>
-        </li>
-      </ul>
-    </nav>
-
+    <nav class="insert-navbar"></nav>
     <main>
       <section class="hero">
+        <img id="avatar_url" alt="avatar url" />
         <h1 class="heading-xl" id="hero__title">
-          Nice to meet you! I'm <span id="name">Adam Keyes</span>.
+          Nice to meet you! I'm <span id="name"></span>.
         </h1>
         <p class="hero__description">
           Based in the UK, I'm a front-end developer passionate about building
@@ -198,33 +172,8 @@
         </button>
       </form>
 
-      <nav class="navbar">
-        <div class="navbar__logo">adamkeyes</div>
-        <ul class="navbar__social">
-          <li>
-            <a href="#" class="navbar__link"
-              ><img src="./assets/images/icon-github.svg" alt="GitHub"
-            /></a>
-          </li>
-          <li>
-            <a href="#" class="navbar__link"
-              ><img
-                src="./assets/images/icon-frontend-mentor.svg"
-                alt="Frontend Mentor"
-            /></a>
-          </li>
-          <li>
-            <a href="#" class="navbar__link"
-              ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
-            /></a>
-          </li>
-          <li>
-            <a href="#" class="navbar__link"
-              ><img src="./assets/images/icon-twitter.svg" alt="Twitter"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+      <nav class="insert-navbar"></nav>
     </footer>
+    <script src="src/js/api.js"></script>
   </body>
 </html>
