@@ -45,6 +45,17 @@ p {
   color: hsl(0, 0%, 85%);
 }
 
+#name {
+  --width: 0.375rem;
+  border-bottom: var(--width) solid hsl(153, 71%, 59%);
+  /* Targets Mobile Sizes */
+}
+@media (max-width: 23.4375rem) {
+  #name {
+    --width: 0.25rem;
+  }
+}
+
 .btn {
   border-bottom: 0.125rem solid hsl(153, 71%, 59%);
 }
@@ -87,13 +98,15 @@ body {
 
 .btn,
 .input,
+.heading-m,
 .projects__card-tech {
   text-transform: uppercase;
 }
 
 .heading-xl,
 .heading-l,
-.heading-m {
+.heading-m,
+.navbar__logo {
   font-weight: 700;
 }
 
@@ -112,6 +125,102 @@ body {
 .heading-m {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.navbar__logo {
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: -0.02775rem;
+}
+@media (max-width: 23.4375rem) {
+  .navbar__logo {
+    font-size: 1.5rem;
+    letter-spacing: -0.02081rem;
+  }
+}
+
+/* Heading (M) remains the same for Desktop, Tablet & Mobile */
+/* Targets Tablet Sizes */
+@media (max-width: 48rem) {
+  .heading-xl {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -0.12781rem;
+  }
+  .heading-l {
+    font-size: 3rem;
+  }
+}
+/* Targets Mobile Sizes */
+@media (max-width: 23.4375rem) {
+  .heading-xl {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.071rem;
+  }
+  .heading-l {
+    font-size: 2rem;
+  }
+}
+.skills,
+.projects__cards {
+  display: grid;
+}
+
+.skills {
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 3.62rem;
+}
+
+.projects__cards {
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.31rem;
+  column-gap: 1.5rem;
+}
+
+/* Targets Tablet Sizes */
+@media (max-width: 48rem) {
+  .skills {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3.25rem;
+  }
+  .projects__cards {
+    column-gap: 1.3rem;
+    row-gap: 3.88rem;
+  }
+}
+/* Targets Mobile Sizes */
+@media (max-width: 23.4375rem) {
+  .skills {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+  .projects__cards {
+    grid-template-columns: 1fr;
+    row-gap: 2.63rem;
+  }
+}
+.navbar,
+.navbar__social {
+  display: flex;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar__social {
+  gap: 2rem;
+}
+@media (max-width: 23.4375rem) {
+  .navbar {
+    /* Targets Mobile sizing */
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

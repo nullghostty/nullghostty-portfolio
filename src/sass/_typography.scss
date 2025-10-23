@@ -27,6 +27,7 @@ body {
 
 .btn,
 .input,
+.heading-m,
 .projects__card-tech {
   text-transform: uppercase;
 }
@@ -38,20 +39,58 @@ body {
 
 .heading-xl,
 .heading-l,
-.heading-m {
+.heading-m,
+.navbar__logo {
   font-weight: 700;
 }
 
 .heading-xl {
-  @include font($fs: 5.5rem, $lh: 5.5rem); 
+  @include font($fs: 5.5rem, $lh: 5.5rem);
   letter-spacing: -0.15625rem;
 }
 
 .heading-l {
-  @include font($fs: 3rem, $lh: 3.5rem); 
+  @include font($fs: 3rem, $lh: 3.5rem);
   letter-spacing: -0.09375rem;
 }
 
 .heading-m {
-  @include font($fs: 1.5rem, $lh: 2rem); 
+  @include font($fs: 1.5rem, $lh: 2rem);
+}
+
+.navbar__logo {
+  @include font($fs: 2rem, $lh: 2rem);
+  letter-spacing: -0.02775rem;
+
+  @media (max-width: 23.4375rem) {
+    & {
+      font-size: 1.5rem;
+      letter-spacing: -0.02081rem;
+    }
+  }
+}
+
+/* Heading (M) remains the same for Desktop, Tablet & Mobile */
+
+/* Targets Tablet Sizes */
+@media (max-width: 48rem) {
+  .heading-xl {
+    @include font($fs: 4.5rem, $lh: 4.5rem);
+    letter-spacing: -0.12781rem;
+  }
+  .heading-l {
+    font-size: 3rem;
+  }
+}
+
+/* Targets Mobile Sizes */
+@media (max-width: 23.4375rem) {
+  .heading-xl {
+    @include font($fs: 2.5rem, $lh: 2.5rem);
+    letter-spacing: -0.071rem;
+  }
+
+  .heading-l {
+    font-size: 2rem;
+  }
 }

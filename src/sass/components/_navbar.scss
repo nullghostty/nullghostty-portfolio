@@ -1,0 +1,22 @@
+.navbar,
+.navbar__social {
+    display: flex;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar__social {
+    gap: 2rem;
+  }
+
+  @media (max-width: 23.4375rem) {
+    /* Targets Mobile sizing */
+    & {
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.25rem;
+    }
+  }
+}
