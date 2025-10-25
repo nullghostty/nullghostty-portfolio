@@ -31,7 +31,13 @@ button {
   cursor: pointer;
 }
 
+/* 
+input & textarea have display properties of "inline"; setting display to inline-block gives us
+the benefits of block-level elements while being an inline block.
+*/
 input,
 textarea {
   all: unset;
+  display: inline-block;
+  width: 100%;
 }
