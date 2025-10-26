@@ -5,7 +5,7 @@
  * @function insertNavbar
  */
 async function insertNavbar() {
-    const containers = document.querySelectorAll(".insert-navbar");
+    const containers = document.querySelectorAll(".navbar");
     const response = await fetch("./components/navbar.html");
     const html = await response.text();
 

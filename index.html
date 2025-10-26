@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    <nav class="insert-navbar"></nav>
+    <nav class="navbar"></nav>
     <main>
       <section class="hero">
         <img id="avatar_url" alt="avatar url" />
@@ -139,43 +139,42 @@
     </main>
 
     <footer class="footer">
-      <section class="footer__intro">
-        <h1 class="heading-xl" id="footer__contact-title">Contact</h1>
-        <p>
-          I would love to hear about your project and how I could help. Please
-          fill in the form, and I'll get back to you as soon as possible.
-        </p>
-      </section>
+      <article class="footer__content line">
+        <section class="footer__intro">
+          <h1 class="heading-xl" id="footer__contact-title">Contact</h1>
+          <p>
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I'll get back to you as soon as possible.
+          </p>
+        </section>
 
-      <form class="footer__form">
-        <input
-          type="text"
-          name="name"
-          class="input"
-          id="footer__name-input"
-          placeholder="Name"
-        />
-        <input
-          type="email"
-          name="email"
-          class="input"
-          id="footer__email-input"
-          placeholder="Email"
-        />
-        <textarea
-          name="message"
-          class="input"
-          id="footer__message-textarea"
-          placeholder="Message"
-        ></textarea>
-        <button type="submit" class="btn" id="footer__button">
-          Send message
-        </button>
-      </form>
-
-      <div class="line"></div>
-            
-      <nav class="insert-navbar"></nav>
+        <form class="footer__form">
+          <input
+            type="text"
+            name="name"
+            class="input"
+            id="footer__name-input"
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            name="email"
+            class="input"
+            id="footer__email-input"
+            placeholder="Email"
+          />
+          <textarea
+            name="message"
+            class="input"
+            id="footer__message-textarea"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit" class="btn" id="footer__button">
+            Send message
+          </button>
+        </form>
+      </article>
+      <nav class="navbar"></nav>
     </footer>
     <script src="src/js/api.js"></script>
   </body>

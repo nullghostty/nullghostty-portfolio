@@ -168,44 +168,12 @@ body {
     font-size: 2rem;
   }
 }
-.skills,
-.projects__cards {
-  display: grid;
+.navbar {
+  max-width: 69.375rem;
+  min-width: 9.62463rem;
+  margin: auto;
 }
 
-.skills {
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 3.62rem;
-}
-
-.projects__cards {
-  grid-template-columns: 1fr 1fr;
-  row-gap: 4.31rem;
-  column-gap: 1.5rem;
-}
-
-/* Targets Tablet Sizes */
-@media (max-width: 48rem) {
-  .skills {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 3.25rem;
-  }
-  .projects__cards {
-    column-gap: 1.3rem;
-    row-gap: 3.88rem;
-  }
-}
-/* Targets Mobile Sizes */
-@media (max-width: 23.4375rem) {
-  .skills {
-    grid-template-columns: 1fr;
-    row-gap: 1.5rem;
-  }
-  .projects__cards {
-    grid-template-columns: 1fr;
-    row-gap: 2.63rem;
-  }
-}
 .navbar,
 .navbar__social {
   display: flex;
@@ -227,35 +195,6 @@ body {
     justify-content: center;
     gap: 1.25rem;
   }
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.footer .line,
-.footer .navbar {
-  /* section & form automatically go in row 1 columns 1 & 2 */
-  /* navbar goes to row 2 and spans across both columns */
-  grid-column: 1/3;
-}
-@media (max-width: 48rem) {
-  .footer {
-    display: block;
-  }
-  .footer {
-    /* move this to _typography file keep here for now */
-  }
-  .footer .footer__intro {
-    text-align: center;
-  }
-}
-
-/* line appears in two places; TODO: move the code below to the appropriate file  */
-.line {
-  width: 100%;
-  height: 0.0625rem;
-  background: white;
 }
 
 /*# sourceMappingURL=style.css.map */
